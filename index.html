@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <Title>Investigacion de operaciones</Title>
+    <link rel="stylesheet" href="main.css">
+      <script type="text/javascript" src="generar-matrices.js"> </script>
+      <script type="text/javascript" src="metodo-simplex.js"></script>
+</head>
+
+
+<body>
+
+  <form id="form1" name="form1" method="post" action=""> <!-- Inicio etiqueta Form -->
+
+    <!-- Parrafo informacion escolar -->
+    <p><!-- Inicio Parrafo -->
+      <strong>
+        Método Simplex<br />
+      </strong>
+
+        Facultad de estudios superiores Aragón <br><br>
+        <strong>Grupo: </strong> 1457 <br><br>
+        <strong>Profesor: </strong> Romero Andalon Jesús Angel <br><br>
+
+        <strong>Integrantes: </strong>
+        <br>Chávez Ceballos Kiana Alejandra,
+        <br>González González Edgar,
+        <br>Martinez Lorenzo Jahaziel Daniel,
+        <br>Ramírez Castillo Angel Oswaldo <br>
+
+        <br><strong>Lenguaje de programación usado: </strong>
+        javascript
+    </p><!-- Final Parrafo -->
+
+    <hr/> <!-- Linea divisora -->
+
+    <!-- Parrafo ingresar datos -->
+    <p> <!-- Inicio Parrafo -->
+
+
+      <!-- Checkbox Maximizar o Minimizar -->
+      <p><b>Objetivo</b>:&nbsp;&nbsp;&nbsp; Maximizar&nbsp;
+      <input id="idoptmaximizar" type="radio" value="V1" checked name="objetivo">&nbsp;&nbsp;&nbsp;&nbsp;
+      Minimizar:&nbsp;&nbsp;&nbsp; <input i="idoptminimizar" type="radio" name="objetivo" value="V2"></p>
+
+
+      <!-- Inputs Numero de variables & Numero de restricciones -->
+      <label>
+          N&uacute;mero de variables:
+              <input id="idnovariables" type="text" name="txtnovariables" placeholder="0">
+      </label>
+
+      <label>
+          N&uacute;mero de Restricciones:
+              <input id="idnorestricciones" type="text" name="txtnorestricciones" placeholder="0">
+              <button type="button" class="button" value="Preparar" onclick="preparar()" style="margin-left: 10px;background: #0E3475;color: #FFFFFF;" /><i class="fa fa-cog"></i>  Iniciar</button>
+      </label>
+
+    </p> <!-- Final Parrafo -->
+
+    <hr/><!-- Linea divisora -->
+
+
+  </form> <!-- Final Etiqueta Form -->
+
+
+
+<div class="fondo">
+
+
+
+        <div class="col-md-9">
+          <br>
+
+	<div class="row">
+
+		<div id="idgridproblema"></div>
+    <div id="aleatorios"></div>
+		<div id="jmodelo"></div>
+		<div id="jsolucion"></div>
+
+	</div>
+</div>
+
+
+</body>
+</html>
